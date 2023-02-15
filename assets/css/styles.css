@@ -541,6 +541,11 @@ img{
 .qualification__subtitle{
     display: inline-block;
     font-size: var(--small-font-size);
+    color: var(--mb-1);
+}
+
+.qualification__calendar{
+    font-size: var(--smaller-font-size);
     color: var(--text-color-light);
 }
 
@@ -564,8 +569,12 @@ img{
     display: none;
 }
 
-.qualification__active{
+.qualification__active[data-content]{
     display: block;
+}
+
+.qualification__button.qualification__active{
+    color: var(--first-color);
 }
 /*==================== SERVICES ====================*/
 
@@ -583,8 +592,52 @@ img{
 
 
 /*==================== CONTACT ME ====================*/
+.contact__container{
+    row-gap: 3rem;
+}
 
+.contact__information{
+    display: flex;
+    margin-bottom: var(--mb-2);
+}
 
+.contact__icon{
+    font-size: 2rem;
+    color: var(--first-color);
+    margin-right: var(--mb-0-75);
+}
+
+.contact__title{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+}
+
+.contact__subtitle{
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+}
+
+.contact__content{
+    background-color: var(--input-color);
+    border-radius: .5rem;
+    padding: .75rem 1rem .25rem;
+}
+
+.contact__label{
+    font-size: var(--smaller-font-size);
+    color: var(--title-color);
+}
+
+.contact__input{
+    width: 100px;
+    background-color: var(--input-color);
+    color: var(--text-color);
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    border: none;
+    outline: none;
+    padding: .25rem .5rem .5rem 0;
+}
 /*==================== FOOTER ====================*/
 
 
